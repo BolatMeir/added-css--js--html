@@ -1,32 +1,16 @@
-//string
-var name = "Satybaldy"
 
-// number
-const PI = 3.14
-
-let aty;
-// aty = "Meir"
-
-console.log("Аты:" + aty)
-
-console.log(PI)
-
-var sum = null; //Мәні бос
-console.log("Sum:" + sum)
-
-var san1 = 10
-var san2 = 15
-
-sum = san1 + san2
-console.log("Sum:", sum)
-
-//boolean true / false
-if(true){
-    var name = "Galymbek"
-    console.log("Шекара ішіндегі аты" + name);
-
-    if(true){
-        var name = "Nurs"
-        console.log("Шекара ішіндегі ішіндегісі аты" + name)
-    }
+let num = prompt('0 мен 99 арасындағы санды енгізіңіз:')
+if(num >= 0 && num <= 9) {
+  alert('Сан:' + num)
+}else if(num >= 10 && num <= 99) {
+  let firstNum = Math.floor(num / 10);
+  let secondNum = (num % 10)
+  alert('Бірінші сан:' + firstNum + '\n' + 'Екінші сан:' + secondNum);
+}else{
+  alert('Тек 0 мен 99 арасындағы санды енгізіңіз.');
 }
+
+
+
+
+
